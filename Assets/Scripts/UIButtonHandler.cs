@@ -2,9 +2,9 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 /// <summary>
-/// Canvas üzerindeki butonları isimlerine göre otomatik bulan ve
+/// Canvas üzerindeki joystick ve aksiyon butonlarını
 /// PlayerController'a bağlayan UI yönetici scripti.
-/// EventTrigger kullanarak basılı tutma (press & hold) desteği sağlar.
+/// Joystick ile hareket, butonlarla zıplama ve koşma desteği sağlar.
 /// </summary>
 public class UIButtonHandler : MonoBehaviour
 {
@@ -12,11 +12,8 @@ public class UIButtonHandler : MonoBehaviour
     [Tooltip("Player Controller referansı. Boş bırakılırsa otomatik bulunur.")]
     public PlayerController playerController;
 
-    // Yön butonları durum bayrakları
-    private bool isForwardPressed;
-    private bool isBackwardPressed;
-    private bool isLeftPressed;
-    private bool isRightPressed;
+    [Tooltip("Sanal joystick referansı. Boş bırakılırsa Canvas içinde otomatik bulunur.")]
+    public VirtualJoystick joystick;
 
     void Start()
     {
@@ -63,24 +60,22 @@ public class UIButtonHandler : MonoBehaviour
             Debug.Log("[UIButtonHandler] PlayerController başarıyla bulundu: " + playerController.gameObject.name);
         }
 
-        // Butonları isimlerine göre bul ve event'leri bağla
-        SetupDirectionButton("ForwardButton",
-            () => isForwardPressed = true,
-            () => isForwardPressed = false);
+        // Joystick referansı yoksa otomatik bul
+        if (joystick == null)
+        {
+            joystick = GetComponentInChildren<VirtualJoystick>();
+        }
 
-        SetupDirectionButton("BackwardButton",
-            () => isBackwardPressed = true,
-            () => isBackwardPressed = false);
+        if (joystick == null)
+        {
+            Debug.LogError("[UIButtonHandler] VirtualJoystick bulunamadı! Canvas içine joystick ekleyin.");
+        }
+        else
+        {
+            Debug.Log("[UIButtonHandler] VirtualJoystick başarıyla bağlandı.");
+        }
 
-        SetupDirectionButton("LeftButton",
-            () => isLeftPressed = true,
-            () => isLeftPressed = false);
-
-        SetupDirectionButton("RightButton",
-            () => isRightPressed = true,
-            () => isRightPressed = false);
-
-        // JumpButton: Sadece basıldığında tetiklenir (basılı tutma gereksiz)
+        // JumpButton: Sadece basıldığında tetiklenir
         SetupActionButton("JumpButton",
             () => playerController.RequestJump());
 
@@ -92,28 +87,18 @@ public class UIButtonHandler : MonoBehaviour
 
     void Update()
     {
-        if (playerController == null) return;
+        if (playerController == null || joystick == null) return;
 
-        // Yön girişini hesapla
-        Vector3 moveInput = Vector3.zero;
-
-        if (isForwardPressed) moveInput.z += 1f;
-        if (isBackwardPressed) moveInput.z -= 1f;
-        if (isRightPressed) moveInput.x += 1f;
-        if (isLeftPressed) moveInput.x -= 1f;
-
-        // Çapraz harekette hızın artmaması için normalize et
-        if (moveInput.magnitude > 1f)
-        {
-            moveInput.Normalize();
-        }
+        // Joystick girişini al ve PlayerController'a gönder
+        Vector2 joystickInput = joystick.InputDirection;
+        Vector3 moveInput = new Vector3(joystickInput.x, 0f, joystickInput.y);
 
         // PlayerController'a hareket girişini gönder
         playerController.SetMoveInput(moveInput);
     }
 
     /// <summary>
-    /// Basılı tutma desteği olan buton kurulumu (yön butonları ve RunButton için).
+    /// Basılı tutma desteği olan buton kurulumu (RunButton için).
     /// PointerDown ve PointerUp eventlerini bağlar.
     /// </summary>
     private void SetupDirectionButton(string buttonName, System.Action onPointerDown, System.Action onPointerUp)
@@ -215,11 +200,6 @@ public class UIButtonHandler : MonoBehaviour
     /// </summary>
     private void ResetAllInputs()
     {
-        isForwardPressed = false;
-        isBackwardPressed = false;
-        isLeftPressed = false;
-        isRightPressed = false;
-
         if (playerController != null)
         {
             playerController.SetRunning(false);

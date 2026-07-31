@@ -1,0 +1,84 @@
+﻿#include "pch-c.h"
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+extern void EventBusExamples__ctor_m2C8DD615134A85ABF5CB63D5D1B2B286570D059A (void);
+extern void CheatCodeController_Start_mDF2FE82BBC38F2F96F6C64A41732341D178F0260 (void);
+extern void CheatCodeController_Update_m61B1E5B2EFC1423B148DF8726E22AA94D61ECB33 (void);
+extern void CheatCodeController_OnDestroy_m9E921CCA2A36F9E931CFDF96F599C7D33752152D (void);
+extern void CheatCodeController_EnableGodMode_mFC7EB0DEA2AB688BFA0ED430F509569874FE0A92 (void);
+extern void CheatCodeController__ctor_m6DAFAF329D47DBA46749C97C056C0BFAF08A9C7B (void);
+extern void CheatCodeController__cctor_mF8B4AC893D30D368C5A98336EBD8D4E408F5AE44 (void);
+extern void CheatCodeController_U3CStartU3Eb__6_0_m1A7F0EAF6B10263D6E141E38B73E3F70DA7B8412 (void);
+extern void CheatCodeEnabled_get_hookName_mE335F1312988A35324968E94FE7C6135A40D9663 (void);
+extern void CheatCodeEnabled__ctor_mD0BEE189D29F2CF12E23753DEE65C1C28637EA8B (void);
+extern void VariableExamples__ctor_m75C88FC7466FC20BA78AB0426DD3CA8B72ED16DF (void);
+extern void PlayerController_Start_m35D13DD6B84204BBC61047C31F5D58BB3FDD53F5 (void);
+extern void PlayerController_Update_mD550EE3D05196DE70999BA94DE185FB08C401EF2 (void);
+extern void PlayerController__ctor_m0F9872F9AE8E33B923FE8115BB50DCD8E63E610A (void);
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mD6D5BBFAC061302550027DFF74D3697997064671 (void);
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mDC3744CA2212E8AA241851BCEE8166EDD0091214 (void);
+static Il2CppMethodPointer s_methodPointers[16] = 
+{
+	EventBusExamples__ctor_m2C8DD615134A85ABF5CB63D5D1B2B286570D059A,
+	CheatCodeController_Start_mDF2FE82BBC38F2F96F6C64A41732341D178F0260,
+	CheatCodeController_Update_m61B1E5B2EFC1423B148DF8726E22AA94D61ECB33,
+	CheatCodeController_OnDestroy_m9E921CCA2A36F9E931CFDF96F599C7D33752152D,
+	CheatCodeController_EnableGodMode_mFC7EB0DEA2AB688BFA0ED430F509569874FE0A92,
+	CheatCodeController__ctor_m6DAFAF329D47DBA46749C97C056C0BFAF08A9C7B,
+	CheatCodeController__cctor_mF8B4AC893D30D368C5A98336EBD8D4E408F5AE44,
+	CheatCodeController_U3CStartU3Eb__6_0_m1A7F0EAF6B10263D6E141E38B73E3F70DA7B8412,
+	CheatCodeEnabled_get_hookName_mE335F1312988A35324968E94FE7C6135A40D9663,
+	CheatCodeEnabled__ctor_mD0BEE189D29F2CF12E23753DEE65C1C28637EA8B,
+	VariableExamples__ctor_m75C88FC7466FC20BA78AB0426DD3CA8B72ED16DF,
+	PlayerController_Start_m35D13DD6B84204BBC61047C31F5D58BB3FDD53F5,
+	PlayerController_Update_mD550EE3D05196DE70999BA94DE185FB08C401EF2,
+	PlayerController__ctor_m0F9872F9AE8E33B923FE8115BB50DCD8E63E610A,
+	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mD6D5BBFAC061302550027DFF74D3697997064671,
+	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mDC3744CA2212E8AA241851BCEE8166EDD0091214,
+};
+static const int32_t s_InvokerIndices[16] = 
+{
+	14617,
+	14617,
+	14617,
+	14617,
+	14617,
+	14617,
+	25055,
+	10964,
+	14407,
+	14617,
+	14617,
+	14617,
+	14617,
+	14617,
+	25096,
+	14617,
+};
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Unity_VisualScripting_DocCodeExamples_CodeGenModule;
+const Il2CppCodeGenModule g_Unity_VisualScripting_DocCodeExamples_CodeGenModule = 
+{
+	"Unity.VisualScripting.DocCodeExamples.dll",
+	16,
+	s_methodPointers,
+	0,
+	NULL,
+	s_InvokerIndices,
+	0,
+	NULL,
+	0,
+	NULL,
+	0,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+};

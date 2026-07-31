@@ -49,9 +49,20 @@ public class PlayerController : MonoBehaviour
             velocity.y = -2f; // Küçük bir değer bırakarak yere yapışmayı sağla
         }
 
-        // Hareket hesaplaması
+        // Hareket hesaplaması - kameranın baktığı yöne göre
         float currentSpeed = isRunning ? moveSpeed * runSpeedMultiplier : moveSpeed;
-        Vector3 move = moveInput * currentSpeed;
+
+        // Player'ın yönüne (kameranın yatay yönü) göre hareket vektörünü hesapla
+        Vector3 forward = transform.forward;
+        Vector3 right = transform.right;
+
+        // Dikey bileşeni sıfırla (sadece yatay düzlemde hareket)
+        forward.y = 0f;
+        right.y = 0f;
+        forward.Normalize();
+        right.Normalize();
+
+        Vector3 move = (forward * moveInput.z + right * moveInput.x) * currentSpeed;
 
         // Yatay hareket uygula
         controller.Move(move * Time.deltaTime);
