@@ -50,7 +50,7 @@ static const int32_t s_InvokerIndices[16] =
 	14617,
 	14617,
 	14617,
-	25055,
+	25056,
 	10964,
 	14407,
 	14617,
@@ -58,7 +58,7 @@ static const int32_t s_InvokerIndices[16] =
 	14617,
 	14617,
 	14617,
-	25096,
+	25097,
 	14617,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Unity_VisualScripting_DocCodeExamples_CodeGenModule;

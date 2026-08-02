@@ -6,7 +6,17 @@
         "dependencies": [
           {
             "name": "NavMeshAgent",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/Game.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "NavMeshData",
+            "scenes": [
+              "Assets/Scenes/Game.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -37,6 +47,7 @@
           {
             "name": "AnimationClip",
             "scenes": [
+              "Assets/Scenes/Game.unity",
               "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
@@ -54,6 +65,7 @@
           {
             "name": "AnimatorController",
             "scenes": [
+              "Assets/Scenes/Game.unity",
               "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 1,
@@ -113,7 +125,10 @@
           },
           {
             "name": "AudioClip",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/Game.unity",
+              "Assets/Scenes/MainMenu.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -134,8 +149,19 @@
           },
           {
             "name": "AudioResource",
-            "scenes": [],
-            "dependencyType": 1,
+            "scenes": [
+              "Assets/Scenes/Game.unity",
+              "Assets/Scenes/MainMenu.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "AudioSource",
+            "scenes": [
+              "Assets/Scenes/Game.unity"
+            ],
+            "dependencyType": 0,
             "icon": null
           },
           {
@@ -473,6 +499,7 @@
           {
             "name": "SkinnedMeshRenderer",
             "scenes": [
+              "Assets/Scenes/Game.unity",
               "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
