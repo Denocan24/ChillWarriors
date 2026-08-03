@@ -619,7 +619,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void VariableDeclaration_set_valu
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 82325
+// Method Definition Index: 82414
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EventBusExamples__ctor_m2C8DD615134A85ABF5CB63D5D1B2B286570D059A (EventBusExamples_t2A84A93C3F959D6613B4EE6B22C2AF1678CCD852* __this, const RuntimeMethod* method) 
 {
 	{
@@ -635,7 +635,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EventBusExamples__ctor_m2C8DD615134A85AB
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 82326
+// Method Definition Index: 82415
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CheatCodeController_Start_mDF2FE82BBC38F2F96F6C64A41732341D178F0260 (CheatCodeController_t9A66CDD3F7E1F91E9E8CB52024B366EB084454D8* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -675,7 +675,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CheatCodeController_Start_mDF2FE82BBC38F
 		return;
 	}
 }
-// Method Definition Index: 82327
+// Method Definition Index: 82416
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CheatCodeController_Update_m61B1E5B2EFC1423B148DF8726E22AA94D61ECB33 (CheatCodeController_t9A66CDD3F7E1F91E9E8CB52024B366EB084454D8* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -763,7 +763,7 @@ IL_0071:
 		return;
 	}
 }
-// Method Definition Index: 82328
+// Method Definition Index: 82417
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CheatCodeController_OnDestroy_m9E921CCA2A36F9E931CFDF96F599C7D33752152D (CheatCodeController_t9A66CDD3F7E1F91E9E8CB52024B366EB084454D8* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -782,7 +782,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CheatCodeController_OnDestroy_m9E921CCA2
 		return;
 	}
 }
-// Method Definition Index: 82329
+// Method Definition Index: 82418
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CheatCodeController_EnableGodMode_mFC7EB0DEA2AB688BFA0ED430F509569874FE0A92 (CheatCodeController_t9A66CDD3F7E1F91E9E8CB52024B366EB084454D8* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -800,7 +800,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CheatCodeController_EnableGodMode_mFC7EB
 		return;
 	}
 }
-// Method Definition Index: 82330
+// Method Definition Index: 82419
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CheatCodeController__ctor_m6DAFAF329D47DBA46749C97C056C0BFAF08A9C7B (CheatCodeController_t9A66CDD3F7E1F91E9E8CB52024B366EB084454D8* __this, const RuntimeMethod* method) 
 {
 	{
@@ -808,7 +808,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CheatCodeController__ctor_m6DAFAF329D47D
 		return;
 	}
 }
-// Method Definition Index: 82331
+// Method Definition Index: 82420
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CheatCodeController__cctor_mF8B4AC893D30D368C5A98336EBD8D4E408F5AE44 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -841,7 +841,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CheatCodeController__cctor_mF8B4AC893D30
 		return;
 	}
 }
-// Method Definition Index: 82332
+// Method Definition Index: 82421
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CheatCodeController_U3CStartU3Eb__6_0_m1A7F0EAF6B10263D6E141E38B73E3F70DA7B8412 (CheatCodeController_t9A66CDD3F7E1F91E9E8CB52024B366EB084454D8* __this, EmptyEventArgs_t2EF153F78311F355E9AE7BAE748576515674476F ___0__, const RuntimeMethod* method) 
 {
 	{
@@ -858,7 +858,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CheatCodeController_U3CStartU3Eb__6_0_m1
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 82333
+// Method Definition Index: 82422
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CheatCodeEnabled_get_hookName_mE335F1312988A35324968E94FE7C6135A40D9663 (CheatCodeEnabled_t2F14A63456AE24B72171A5EA5F0717FF8207958D* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -872,7 +872,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CheatCodeEnabled_get_hookName_mE335
 		return _stringLiteralC7BAB4BF1379642F5D5601E01545E2A424EC77F3;
 	}
 }
-// Method Definition Index: 82334
+// Method Definition Index: 82423
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CheatCodeEnabled__ctor_mD0BEE189D29F2CF12E23753DEE65C1C28637EA8B (CheatCodeEnabled_t2F14A63456AE24B72171A5EA5F0717FF8207958D* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -894,7 +894,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CheatCodeEnabled__ctor_mD0BEE189D29F2CF1
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 82335
+// Method Definition Index: 82424
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VariableExamples__ctor_m75C88FC7466FC20BA78AB0426DD3CA8B72ED16DF (VariableExamples_t40C9CBEB0E29076DAC8F4C502D7C193748633DBE* __this, const RuntimeMethod* method) 
 {
 	{
@@ -910,7 +910,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VariableExamples__ctor_m75C88FC7466FC20B
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 82336
+// Method Definition Index: 82425
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerController_Start_m35D13DD6B84204BBC61047C31F5D58BB3FDD53F5 (PlayerController_t92523C273B3551823DCB021C0ABB460C55C2E0A3* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -940,7 +940,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerController_Start_m35D13DD6B84204BB
 		return;
 	}
 }
-// Method Definition Index: 82337
+// Method Definition Index: 82426
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerController_Update_mD550EE3D05196DE70999BA94DE185FB08C401EF2 (PlayerController_t92523C273B3551823DCB021C0ABB460C55C2E0A3* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -981,7 +981,7 @@ IL_0034:
 		return;
 	}
 }
-// Method Definition Index: 82338
+// Method Definition Index: 82427
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerController__ctor_m0F9872F9AE8E33B923FE8115BB50DCD8E63E610A (PlayerController_t92523C273B3551823DCB021C0ABB460C55C2E0A3* __this, const RuntimeMethod* method) 
 {
 	{
@@ -997,7 +997,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerController__ctor_m0F9872F9AE8E33B9
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 82339
+// Method Definition Index: 82428
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t0C24B9C301E10C8F86F35A968D9347F9C2AA97FD UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mD6D5BBFAC061302550027DFF74D3697997064671 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1031,7 +1031,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t0C24B9C301E10C8F86F35A968D934
 		return L_6;
 	}
 }
-// Method Definition Index: 82340
+// Method Definition Index: 82429
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mDC3744CA2212E8AA241851BCEE8166EDD0091214 (UnitySourceGeneratedAssemblyMonoScriptTypes_v1_t194D8D0B9EF2EDDB7C7ABA532CBF94DBA688A872* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1144,7 +1144,7 @@ IL2CPP_EXTERN_C void MonoScriptData_t0C24B9C301E10C8F86F35A968D9347F9C2AA97FD_ma
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-// Method Definition Index: 55530
+// Method Definition Index: 55557
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR VariableDeclarations_t7701E0B99E3AED5CDC693ABFBDD6D1C73945B405* Variables_get_declarations_m19E8260802B900D2A59B8A9050028A1AFA76AA81_inline (Variables_t979F11193339E481B9E22E6D207F8B37882F07E5* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1153,7 +1153,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR VariableDeclarations_t7701E0B99E3
 		return L_0;
 	}
 }
-// Method Definition Index: 55499
+// Method Definition Index: 55526
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* VariableDeclaration_get_value_mCDAD586AE963B276956CB9D0E6BD1E7B9CCBAB9F_inline (VariableDeclaration_t915ABE2E4C37AE20885524D092F99423EBF65CFB* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1162,7 +1162,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* VariableDeclaratio
 		return L_0;
 	}
 }
-// Method Definition Index: 55500
+// Method Definition Index: 55527
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void VariableDeclaration_set_value_m623EC0A2B1A37614E02A5709DD3A8735A47CF9E0_inline (VariableDeclaration_t915ABE2E4C37AE20885524D092F99423EBF65CFB* __this, RuntimeObject* ___0_value, const RuntimeMethod* method) 
 {
 	{

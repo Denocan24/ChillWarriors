@@ -21,6 +21,12 @@
             "icon": null
           },
           {
+            "name": "NavMeshObstacle",
+            "scenes": [],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
             "name": "NavMeshProjectSettings",
             "scenes": [],
             "dependencyType": 1,

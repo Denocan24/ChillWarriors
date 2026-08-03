@@ -7,7 +7,7 @@ public class EnemyAI : MonoBehaviour
 {
     [Header("Hedef Ayarları")]
     public Transform target;
-    public float attackRange = 10f;
+    public float attackRange = 30f;
     public float shootingInterval = 3f;
     public float damage = 25f;
 
@@ -21,10 +21,21 @@ public class EnemyAI : MonoBehaviour
     private float lastShootTime;
     private bool isPlayerDead = false;
 
+    // Sıkışma tespiti
+    private Vector3 lastPosition;
+    private float stuckTimer = 0f;
+    private float stuckCheckInterval = 2f;
+    private float stuckThreshold = 0.5f; // Bu mesafeden az hareket = sıkışmış
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
+
+        // NavMeshAgent kalite ayarları - binaları daha iyi görmesi için
+        agent.obstacleAvoidanceType = ObstacleAvoidanceType.HighQualityObstacleAvoidance;
+        agent.autoRepath = true;
+        lastPosition = transform.position;
 
         if (target == null)
         {
@@ -84,7 +95,37 @@ public class EnemyAI : MonoBehaviour
             if (agent.isOnNavMesh)
             {
                 agent.isStopped = false;
-                agent.SetDestination(target.position);
+
+                // Hedefin NavMesh üzerinde geçerli bir noktada olduğunu doğrula
+                NavMeshHit navHit;
+                Vector3 validTarget = target.position;
+                if (NavMesh.SamplePosition(target.position, out navHit, 5f, NavMesh.AllAreas))
+                {
+                    validTarget = navHit.position;
+                }
+                agent.SetDestination(validTarget);
+
+                // Sıkışma tespiti
+                stuckTimer += Time.deltaTime;
+                if (stuckTimer >= stuckCheckInterval)
+                {
+                    float movedDistance = Vector3.Distance(transform.position, lastPosition);
+                    if (movedDistance < stuckThreshold && agent.remainingDistance > 1f)
+                    {
+                        // Sıkışmış - yolu yeniden hesapla
+                        agent.ResetPath();
+                        // Hafif rastgele offset ile tekrar dene
+                        Vector3 randomOffset = Random.insideUnitSphere * 3f;
+                        randomOffset.y = 0f;
+                        Vector3 alternativeTarget = validTarget + randomOffset;
+                        if (NavMesh.SamplePosition(alternativeTarget, out navHit, 5f, NavMesh.AllAreas))
+                        {
+                            agent.SetDestination(navHit.position);
+                        }
+                    }
+                    lastPosition = transform.position;
+                    stuckTimer = 0f;
+                }
             }
 
             if (animator != null)

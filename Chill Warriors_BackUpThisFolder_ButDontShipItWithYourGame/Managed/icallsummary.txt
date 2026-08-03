@@ -113,12 +113,21 @@ Unity.Profiling.ProfilerRecorder::GetLastValue_Injected
 Unity.Profiling.ProfilerRecorder::Control_Injected
 Unity.Profiling.ProfilerRecorder::Create_Injected
 Unity.Profiling.ProfilerRecorder::GetSampleInternal_Injected
+UnityEngine.AI.NavMesh::SamplePosition_Injected
 UnityEngine.AI.NavMeshAgent::SetDestination_Injected
 UnityEngine.AI.NavMeshAgent::get_isOnNavMesh_Injected
 UnityEngine.AI.NavMeshAgent::get_remainingDistance_Injected
+UnityEngine.AI.NavMeshAgent::ResetPath_Injected
 UnityEngine.AI.NavMeshAgent::get_velocity_Injected
+UnityEngine.AI.NavMeshAgent::set_autoRepath_Injected
 UnityEngine.AI.NavMeshAgent::set_isStopped_Injected
+UnityEngine.AI.NavMeshAgent::set_obstacleAvoidanceType_Injected
 UnityEngine.AI.NavMeshAgent::get_pathStatus_Injected
+UnityEngine.AI.NavMeshObstacle::set_carveOnlyStationary_Injected
+UnityEngine.AI.NavMeshObstacle::set_carving_Injected
+UnityEngine.AI.NavMeshObstacle::set_center_Injected
+UnityEngine.AI.NavMeshObstacle::set_shape_Injected
+UnityEngine.AI.NavMeshObstacle::set_size_Injected
 UnityEngine.Android.AndroidApplication::get_UnityPlayerRaw
 UnityEngine.Android.AndroidGame::StopLoading
 UnityEngine.AndroidJNI::CallBooleanMethodUnsafe
@@ -411,6 +420,7 @@ UnityEngine.Canvas::get_renderingDisplaySize_Injected
 UnityEngine.Canvas::set_additionalShaderChannels_Injected
 UnityEngine.Canvas::set_overrideSorting_Injected
 UnityEngine.Canvas::set_referencePixelsPerUnit_Injected
+UnityEngine.Canvas::set_renderMode_Injected
 UnityEngine.Canvas::set_scaleFactor_Injected
 UnityEngine.Canvas::set_sortingLayerID_Injected
 UnityEngine.Canvas::set_sortingOrder_Injected
@@ -461,6 +471,7 @@ UnityEngine.Collider::set_isTrigger_Injected
 UnityEngine.ColorGamutUtility::GetColorPrimaries
 UnityEngine.ColorGamutUtility::GetTransferFunction
 UnityEngine.ColorGamutUtility::GetWhitePoint
+UnityEngine.ColorUtility::DoTryParseHtmlColor_Injected
 UnityEngine.Component::get_gameObject_Injected
 UnityEngine.Component::get_transform_Injected
 UnityEngine.Component::BroadcastMessage_Injected
@@ -641,6 +652,7 @@ UnityEngine.Gradient::get_colorSpace_Injected
 UnityEngine.Gradient::get_mode_Injected
 UnityEngine.Graphics::GetPreserveFramebufferAlpha
 UnityEngine.Graphics::Internal_GetMaxDrawMeshInstanceCount
+UnityEngine.Graphics::Blit2_Injected
 UnityEngine.Graphics::Blit4_Injected
 UnityEngine.Graphics::ClearRandomWriteTargets
 UnityEngine.Graphics::CopyTexture_Region_Injected
@@ -1116,6 +1128,7 @@ UnityEngine.Random::RandomRangeInt
 UnityEngine.Random::Range
 UnityEngine.Random::get_value
 UnityEngine.Random::InitState
+UnityEngine.Random::get_insideUnitSphere_Injected
 UnityEngine.Random::get_state_Injected
 UnityEngine.Random::set_state_Injected
 UnityEngine.RectOffset::get_bottom_Injected
@@ -1158,6 +1171,7 @@ UnityEngine.Renderer::get_sortingOrder_Injected
 UnityEngine.Renderer::GetMaterial_Injected
 UnityEngine.Renderer::GetSharedMaterial_Injected
 UnityEngine.Renderer::SetMaterial_Injected
+UnityEngine.Renderer::get_bounds_Injected
 UnityEngine.Renderer::set_allowGPUDrivenRendering_Injected
 UnityEngine.Renderer::set_enabled_Injected
 UnityEngine.Renderer::set_localBounds_Injected
@@ -1729,9 +1743,11 @@ UnityEngine.Texture2D::get_whiteTexture_Injected
 UnityEngine.Texture2D::GetImageDataSize_Injected
 UnityEngine.Texture2D::ApplyImpl_Injected
 UnityEngine.Texture2D::GetPixelBilinearImpl_Injected
+UnityEngine.Texture2D::ReadPixelsImpl_Injected
 UnityEngine.Texture2D::SetAllPixels32_Injected
 UnityEngine.Texture2D::SetPixelImpl_Injected
 UnityEngine.Texture2D::SetPixelsImpl_Injected
+UnityEngine.Texture2D::GetPixels_Injected
 UnityEngine.Texture2D::get_format_Injected
 UnityEngine.Texture2DArray::Internal_CreateImpl_Injected
 UnityEngine.Texture2DArray::get_isReadable_Injected

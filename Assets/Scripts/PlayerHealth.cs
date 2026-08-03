@@ -42,6 +42,10 @@ public class PlayerHealth : MonoBehaviour
     [Tooltip("Ana menü sahne adı")]
     public string mainMenuSceneName = "MainMenu";
 
+    [Header("Hasar Efektleri")]
+    [Tooltip("Hasar efektleri scripti (otomatik bulunur)")]
+    public DamageEffects damageEffects;
+
     // Dahili değişkenler
     private float currentHealth;
     private CharacterController controller;
@@ -74,6 +78,10 @@ public class PlayerHealth : MonoBehaviour
         fallStartY = transform.position.y;
 
         UpdateHealthBar();
+
+        // DamageEffects otomatik bul
+        if (damageEffects == null)
+            damageEffects = GetComponent<DamageEffects>();
     }
 
     void Update()
@@ -170,6 +178,12 @@ public class PlayerHealth : MonoBehaviour
         if (audioSource != null && hurtClip != null && damage > 0)
         {
             audioSource.PlayOneShot(hurtClip);
+        }
+
+        // Hasar görsel efektleri
+        if (damageEffects != null && damage > 0)
+        {
+            damageEffects.PlayDamageEffect(damage / maxHealth);
         }
 
         OnHealthChanged?.Invoke(currentHealth, maxHealth);
